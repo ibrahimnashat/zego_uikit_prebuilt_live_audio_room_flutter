@@ -2,10 +2,10 @@
 import 'package:zego_uikit/zego_uikit.dart';
 
 /// @nodoc
-final seatItemWidth = 250.zW;
+final seatItemWidth = 180.zW;
 
 /// @nodoc
-final seatItemHeight = 250.zR;
+final seatItemHeight = 180.zR;
 
 /// @nodoc
 final seatItemRowSpacing = 7.5.zW;
