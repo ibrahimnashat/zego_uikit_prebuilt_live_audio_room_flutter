@@ -110,7 +110,11 @@ class ZegoLivePageState extends State<ZegoLivePage>
               child: LayoutBuilder(builder: (context, constraints) {
                 return Stack(
                   children: [
-                    background(context, constraints.maxHeight),
+                    background(
+                      context,
+                      constraints.maxWidth,
+                      constraints.maxHeight,
+                    ),
                     audioVideoContainer(
                       constraints.maxWidth,
                       constraints.maxHeight,
@@ -146,12 +150,12 @@ class ZegoLivePageState extends State<ZegoLivePage>
     );
   }
 
-  Widget background(BuildContext context, double height) {
+  Widget background(BuildContext context, double width, double height) {
     return Positioned(
       top: 0,
       left: 0,
       child: Container(
-        width: double.infinity,
+        width: width,
         height: height,
         decoration: const BoxDecoration(color: Color(0xffF4F4F6)),
         child: widget.config.background,
