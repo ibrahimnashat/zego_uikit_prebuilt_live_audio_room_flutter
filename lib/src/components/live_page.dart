@@ -219,7 +219,7 @@ class ZegoLivePageState extends State<ZegoLivePage>
     );
     double topPosition = 169.zR;
     if (widget.config.topBar != null) {
-      topPosition += 50.0;
+      topPosition += 71.0;
     }
     return Positioned(
       top: topPosition,
